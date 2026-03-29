@@ -1,25 +1,25 @@
 # odoo-hackathon
-# 💼 Expense Management System (Multi-Level Approval SaaS)
+# ?? Expense Management System (Multi-Level Approval SaaS)
 
 A scalable expense management system designed to automate reimbursement workflows with multi-level and conditional approvals.
 
 ---
 
-## 🚀 Problem Statement
+## ?? Problem Statement
 
 Manual expense reimbursement processes are:
 
-* Time-consuming ⏳
-* Error-prone ❌
-* Lack transparency 🔍
+* Time-consuming ?
+* Error-prone ?
+* Lack transparency ??
 
 This system solves these issues with automation, structured approval workflows, and smart rules.
 
 ---
 
-## ✨ Features
+## ? Features
 
-### 🔐 Authentication & User Management
+### ?? Authentication & User Management
 
 * Company auto-created on signup
 * Role-based access:
@@ -31,7 +31,7 @@ This system solves these issues with automation, structured approval workflows, 
 
 ---
 
-### 💸 Expense Submission
+### ?? Expense Submission
 
 * Submit expenses with:
 
@@ -44,18 +44,18 @@ This system solves these issues with automation, structured approval workflows, 
 
 ---
 
-### ✅ Approval Workflow
+### ? Approval Workflow
 
 * Multi-level approval system
 * Custom approval sequences:
 
-  * Manager → Finance → Director
+  * Manager ? Finance ? Director
 * Comments on approval/rejection
 * Auto-forwarding to next approver
 
 ---
 
-### ⚙️ Conditional Approval Rules
+### ?? Conditional Approval Rules
 
 * Percentage-based approval (e.g., 60%)
 * Specific approver override (e.g., CFO)
@@ -63,7 +63,7 @@ This system solves these issues with automation, structured approval workflows, 
 
 ---
 
-### 🔒 Role Permissions
+### ?? Role Permissions
 
 | Role     | Permissions                                            |
 | -------- | ------------------------------------------------------ |
@@ -73,7 +73,7 @@ This system solves these issues with automation, structured approval workflows, 
 
 ---
 
-### 🤖 OCR Integration
+### ?? OCR Integration
 
 * Auto-extract:
 
@@ -84,7 +84,7 @@ This system solves these issues with automation, structured approval workflows, 
 
 ---
 
-## 🛠️ Tech Stack
+## ??? Tech Stack
 
 ### Frontend
 
@@ -115,7 +115,7 @@ This system solves these issues with automation, structured approval workflows, 
 
 ---
 
-## 🏗️ System Design Highlights
+## ??? System Design Highlights
 
 * Role-based access control (RBAC)
 * Event-driven approval workflow
@@ -124,7 +124,7 @@ This system solves these issues with automation, structured approval workflows, 
 
 ---
 
-## 📦 Installation
+## ?? Installation
 
 ```bash
 # Clone repo
@@ -158,15 +158,16 @@ Query params:
 The response includes the requested rates, missing symbols (if any), and
 whether the data came from cache.
 
-## 👨‍💻 Author
+## ????? Author
 
 Tejasvi 
 
 ---
 
-## ⭐ Contribute
+## ? Contribute
 
 Pull requests are welcome!
+
 
 
 

@@ -88,19 +88,19 @@ This system solves these issues with automation, structured approval workflows, 
 
 ### Frontend
 
-* React.js
-* Tailwind CSS
+* React.js (Vite)
+* Custom CSS
 
 ### Backend
 
-* Node.js
-* Express.js
-* TypeScript
+* Flask (Python)
+* SQLAlchemy
+* Flask-JWT-Extended
 
 ### Database
 
-* PostgreSQL
-* Prisma ORM
+* SQLite (default)
+* PostgreSQL (optional)
 
 ### APIs
 
@@ -128,18 +128,35 @@ This system solves these issues with automation, structured approval workflows, 
 
 ```bash
 # Clone repo
-git clone https://https://github.com/yasharun1010/odoo-hackathon.git
+git clone https://github.com/yasharun1010/odoo-hackathon.git
 
-# Backend setup
-cd server
+# Backend setup (Flask)
+cd backend
+python -m venv .venv
+.\.venv\Scripts\activate
+pip install -r requirements.txt
+cd ..
+python -m backend.app
+
+# Frontend setup (React)
+cd frontend
 npm install
 npm run dev
+```
 
-# Frontend setup
-cd client
-npm install
-npm run dev
+## Exchange Rate API
 
+The backend exposes a simple exchange-rate endpoint that proxies data from
+https://api.exchangerate-api.com:
+
+GET /api/exchange-rate?base=USD&symbols=INR,EUR
+
+Query params:
+* base: 3-letter currency code (default USD)
+* symbols: comma-separated list of target currencies (optional)
+
+The response includes the requested rates, missing symbols (if any), and
+whether the data came from cache.
 
 ## 👨‍💻 Author
 
@@ -150,3 +167,11 @@ Tejasvi
 ## ⭐ Contribute
 
 Pull requests are welcome!
+
+
+
+
+
+
+
+

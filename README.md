@@ -1,1 +1,152 @@
 # odoo-hackathon
+# 💼 Expense Management System (Multi-Level Approval SaaS)
+
+A scalable expense management system designed to automate reimbursement workflows with multi-level and conditional approvals.
+
+---
+
+## 🚀 Problem Statement
+
+Manual expense reimbursement processes are:
+
+* Time-consuming ⏳
+* Error-prone ❌
+* Lack transparency 🔍
+
+This system solves these issues with automation, structured approval workflows, and smart rules.
+
+---
+
+## ✨ Features
+
+### 🔐 Authentication & User Management
+
+* Company auto-created on signup
+* Role-based access:
+
+  * Admin
+  * Manager
+  * Employee
+* Manager hierarchy assignment
+
+---
+
+### 💸 Expense Submission
+
+* Submit expenses with:
+
+  * Amount (multi-currency)
+  * Category
+  * Description
+  * Date
+* OCR-based receipt scanning (auto-fill fields)
+* Track status: Approved / Rejected / Pending
+
+---
+
+### ✅ Approval Workflow
+
+* Multi-level approval system
+* Custom approval sequences:
+
+  * Manager → Finance → Director
+* Comments on approval/rejection
+* Auto-forwarding to next approver
+
+---
+
+### ⚙️ Conditional Approval Rules
+
+* Percentage-based approval (e.g., 60%)
+* Specific approver override (e.g., CFO)
+* Hybrid rules (60% OR CFO approval)
+
+---
+
+### 🔒 Role Permissions
+
+| Role     | Permissions                                            |
+| -------- | ------------------------------------------------------ |
+| Admin    | Manage users, roles, approval rules, view all expenses |
+| Manager  | Approve/reject, view team expenses                     |
+| Employee | Submit expenses, view own history                      |
+
+---
+
+### 🤖 OCR Integration
+
+* Auto-extract:
+
+  * Amount
+  * Date
+  * Merchant name
+  * Category
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* Tailwind CSS
+
+### Backend
+
+* Node.js
+* Express.js
+* TypeScript
+
+### Database
+
+* PostgreSQL
+* Prisma ORM
+
+### APIs
+
+* Country & Currency: https://restcountries.com
+* Currency Conversion: https://api.exchangerate-api.com
+
+### Other Tools
+
+* Tesseract.js (OCR)
+* Cloudinary / AWS S3 (file uploads)
+* JWT Authentication
+
+---
+
+## 🏗️ System Design Highlights
+
+* Role-based access control (RBAC)
+* Event-driven approval workflow
+* Modular rule engine for conditional approvals
+* Multi-currency support
+
+---
+
+## 📦 Installation
+
+```bash
+# Clone repo
+git clone https://https://github.com/yasharun1010/odoo-hackathon.git
+
+# Backend setup
+cd server
+npm install
+npm run dev
+
+# Frontend setup
+cd client
+npm install
+npm run dev
+
+
+## 👨‍💻 Author
+
+Tejasvi 
+
+---
+
+## ⭐ Contribute
+
+Pull requests are welcome!

@@ -128,7 +128,7 @@ This system solves these issues with automation, structured approval workflows, 
 
 ```bash
 # Clone repo
-git clone https://https://github.com/yasharun1010/odoo-hackathon.git
+git clone https://github.com/yasharun1010/odoo-hackathon.git
 
 # Backend setup
 cd server
@@ -141,6 +141,22 @@ npm install
 npm run dev
 
 
+```
+
+## Exchange Rate API
+
+The backend exposes a simple exchange-rate endpoint that proxies data from
+https://api.exchangerate-api.com:
+
+GET /api/exchange-rate?base=USD&symbols=INR,EUR
+
+Query params:
+* base: 3-letter currency code (default USD)
+* symbols: comma-separated list of target currencies (optional)
+
+The response includes the requested rates, missing symbols (if any), and
+whether the data came from cache.
+
 ## 👨‍💻 Author
 
 Tejasvi 
@@ -150,3 +166,6 @@ Tejasvi
 ## ⭐ Contribute
 
 Pull requests are welcome!
+
+
+

@@ -128,7 +128,7 @@ This system solves these issues with automation, structured approval workflows, 
 
 ```bash
 # Clone repo
-git clone https://https://github.com/yasharun1010/odoo-hackathon.git
+git clone https://github.com/yasharun1010/odoo-hackathon.git
 
 # Backend setup
 cd server

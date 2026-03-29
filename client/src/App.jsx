@@ -1,11 +1,17 @@
-import ApprovalDashboard from "./pages/ApprovalDashboard";
+import { useState } from "react";
+import ExpenseForm from "./pages/employee/ExpenseForm";
+import ApprovalDashboard from "./pages/manager/ApprovalDashboard";
 
-function App() {
+export default function App() {
+  const [page, setPage] = useState("form");
+
   return (
     <div>
-      <ApprovalDashboard />
+      <button onClick={() => setPage("form")}>Employee</button>
+      <button onClick={() => setPage("approval")}>Manager</button>
+
+      {page === "form" && <ExpenseForm />}
+      {page === "approval" && <ApprovalDashboard />}
     </div>
   );
 }
-
-export default App;

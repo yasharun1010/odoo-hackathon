@@ -104,8 +104,8 @@ This system solves these issues with automation, structured approval workflows, 
 
 ### APIs
 
-* Country & Currency: https://restcountries.com
-* Currency Conversion: https://api.exchangerate-api.com
+* Country & Currency:  https://restcountries.com/v3.1/all?fields=name,currencies
+* Currency Conversion:  https://api.exchangerate-api.com/v4/latest/{BASE_CURRENCY}
 
 ### Other Tools
 
